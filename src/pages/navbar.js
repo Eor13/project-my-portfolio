@@ -9,8 +9,8 @@ const NavBar =() =>{
                 <h1>Everson de Oliveira</h1>
             </div>
             <nav>
-                <li><a href="/about">Sobre</a></li>
-                <li><a href="/projects">Projetos</a></li>
+                <li><a href="/">Sobre</a></li>
+                <li><a href="/about">Projetos</a></li>
                 <li><a href="/curriculum">Currículo</a></li>
                 <li><a href="/contact">Contato</a></li>
             </nav>
