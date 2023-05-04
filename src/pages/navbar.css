@@ -1,0 +1,32 @@
+.container{
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    padding: 10px;
+}
+.container div{
+    display: flex;
+    align-items: center;
+}
+.container div h1{
+    margin: 0;
+}
+
+.container div img{
+    /* margin: 0.3rem; */
+    width: 5%;
+    height: 5%;
+}
+
+.container nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container nav li{
+    list-style-type: none;
+    margin: 0.3rem;
+
+}

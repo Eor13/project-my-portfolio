@@ -1,14 +1,13 @@
-import { Outlet } from "react-router-dom";
-import { NavBar } from "./pages/navbar";
+import { AppRoutes } from "./pages/routes";
+
 
 
 function App() {
   return (
     <>
-      <NavBar/>
-      <Outlet/>
+      <AppRoutes/>
     </>
   );
 }
 
-export default App;
+export default App ;
