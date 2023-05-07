@@ -1,11 +1,15 @@
+import { NavBar } from "./pages/navbar";
 import { AppRoutes } from "./pages/routes";
-
+import './app.css'
 
 
 function App() {
   return (
-    <>
-      <AppRoutes/>
+    < >
+      <NavBar/> 
+      <main className="toggleColor">
+        <AppRoutes/>
+      </main>    
     </>
   );
 }

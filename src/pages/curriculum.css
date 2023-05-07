@@ -1,0 +1,16 @@
+.containerCurriculum{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.containerCurriculum h1{
+    background-color:antiquewhite;
+    border-radius: 2px;
+    width: 98%;
+    margin: 10px auto;
+}
+.containerCurriculum p{
+    text-align: justify;
+    padding: 0 15px;
+}

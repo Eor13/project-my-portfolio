@@ -1,10 +1,23 @@
+import './curriculum.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMarker, fas } from '@fortawesome/free-solid-svg-icons';
+import { faYoutube, faLinkedin, faLinkedinIn, faGithub, faHtml5, faCss3Alt, faJsSquare, faReact, faBootstrap, faJava } from "@fortawesome/free-brands-svg-icons";
+
 
 const Curriculum =() =>{
     return(
-        <section>
-            <FontAwesomeIcon icon={faMarker}/>
+        <section className='containerCurriculum'>
+            <FontAwesomeIcon icon={faYoutube}/>
+            <FontAwesomeIcon icon={faLinkedin}/>
+            <FontAwesomeIcon icon={faLinkedinIn}/>
+            <FontAwesomeIcon icon={faGithub}/>
+            <FontAwesomeIcon icon={faHtml5}/>
+            <FontAwesomeIcon icon={faCss3Alt}/>
+            <FontAwesomeIcon icon={faJsSquare}/>
+            
+            <FontAwesomeIcon icon={faReact}/>
+            <FontAwesomeIcon icon={faBootstrap}/>
+            <FontAwesomeIcon icon={faJava}/>
+
             <h1>Currículo</h1>
 
             <h3>OBJETIVO</h3>
