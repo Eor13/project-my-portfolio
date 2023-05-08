@@ -7,11 +7,8 @@ const About = () => {
     return(
         <section className="containerAbout">
             <div className="iAm">
-                <img src="http://placekitten.com/g/400/600" alt="Everson"/>
-                <div>
-                    <a href="https://github.com/Eor13" target="_blank"><FontAwesomeIcon className="icon" icon={faGithubAlt}/></a>
-                    <a href="https://www.linkedin.com/in/everson-de-oliveira-ribeiro/" target="_blank"><FontAwesomeIcon className="icon" icon={faLinkedinIn} /></a>
-                </div>
+                <img src="http://placekitten.com/g/500/600" alt="Everson"/>
+                
             </div>
             <div className="description">  
                 <h1>Olá, Seja bem-Vindo!</h1>
@@ -22,6 +19,10 @@ const About = () => {
                 <p>🚶‍♂️Assim, está em meus planos buscar uma qualificação em uma Linguagem de Back-end e um sistema de gerenciamento de banco de dados para ter uma melhor compreensão da integração do sistema.</p>
                 <p>👨Além de tudo, sou organizado, proativo, responsável, ético, resiliente, ademais possuo facilidade com trabalho em equipe e gosto de desafios.</p>
                 <p>😃Desta forma, estou aberto para novos desafios para que possa desenvolver-me profissionalmente e pessoalmente com o intuito de ser um ativo para empresa, por fim tendo a possibilidade de construir uma carreira sólida na área.</p>
+                <div>
+                    <a href="https://github.com/Eor13" target="_blank"><FontAwesomeIcon className="icon" icon={faGithubAlt}/></a>
+                    <a href="https://www.linkedin.com/in/everson-de-oliveira-ribeiro/" target="_blank"><FontAwesomeIcon className="icon" icon={faLinkedinIn} /></a>
+                </div>
             </div>
         </section>
     )

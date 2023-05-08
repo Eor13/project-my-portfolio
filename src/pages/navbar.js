@@ -1,5 +1,5 @@
 import "./navbar.css";
-import lodding from "../images/lodding.gif";
+import lodding from "../images/climbing-stairs.png";
 
 const NavBar =() =>{
     return(
