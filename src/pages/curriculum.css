@@ -1,12 +1,19 @@
+@import "../variables.css";
+
 .containerCurriculum{
     display: flex;
     flex-direction: column;
     text-align: justify;
     padding: 2% 5%;
+    /* min-height: 80vh; */
 }
 
 .containerCurriculum h1, h3{
-    background-color:antiquewhite;
+    background-color: var(--color-titles);
+    font-family: var(--font-secondary);
+    color: var(--color-background);
+    letter-spacing: 2px;
+    font-size: 2rem;
     border-radius: 2px;
     width: 98%;
     margin: 10px auto;
@@ -16,6 +23,7 @@
 .containerCurriculum p{
     text-align: justify;
     padding: 0 15px;
+    margin-bottom: 20px;
 }
 .containerCurriculum ul{
     padding-left: 10px;

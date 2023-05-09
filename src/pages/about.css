@@ -1,16 +1,17 @@
+@import "../variables.css";
+
 .containerAbout{
     display: flex;
     flex-direction: row;
     /* flex-wrap: wrap; */
+    min-height: 85vh;
     
 }
 .containerAbout .iAm{
     padding: 10px 10px 0;
     /* margin-top: 10px; */
     margin: 10px 0;
-
-    /* background-color: aquamarine; */
-
+    height: auto;
 }
 .containerAbout .iAm div{
     display: flex;
@@ -22,14 +23,16 @@
     flex-direction: column;
     align-items: center;
     /* margin-top: 10px; */
-    margin: 80px 0;
+    margin: 30px 0;
     padding: 20px 20px 0;
-    text-align: justify;
-    /* background-color: lightpink; */
     gap: 8px;
+    text-align: justify;
 }
 .containerAbout .description h1{
     margin-bottom: 20px 0;
+    font-family: var(--font-secondary);
+    letter-spacing: 2px;
+    font-size: 2rem;
 }
 .containerAbout .description .icon{
     width: 50px;
