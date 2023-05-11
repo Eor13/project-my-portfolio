@@ -1,70 +1,86 @@
 import './curriculum.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faHtml5, faCss3Alt, faJsSquare, faReact, faJava, faFigma, faGitAlt} from "@fortawesome/free-brands-svg-icons";
-import { faCode, faDatabase, faImage} from "@fortawesome/free-solid-svg-icons";
+import { faCode, faDatabase, faImage, faArrowCircleUp } from "@fortawesome/free-solid-svg-icons";
+
+import { useContext } from 'react';
+import { ThemeContext } from '../services/themeContext';
 
 
 const Curriculum =() =>{
     return(
         <section className='containerCurriculum'>
 
-            <h1>Currículo</h1>
+            <h1 className='title'>Currículo</h1>
 
             <h3>OBJETIVO</h3>
-            <p>Estou à procura da minha primeira oportunidade como desenvolver Front-End Júnior. Estou em transição de carreira para área de tecnologia no momento, venho da área administrativa de empresas na qual sempre tiver facilidade em entender a lógica por trás de seus funcionamentos, dessa maneira despertou-me o interesse na área de Tech.</p>
+            <P>Estou à procura da minha primeira oportunidade como desenvolver Front-End Júnior. Estou em transição de carreira para área de tecnologia no momento, venho da área administrativa de empresas na qual sempre tiver facilidade em entender a lógica por trás de seus funcionamentos, dessa maneira despertou-me o interesse na área de Tech.</P>
 
             <h3>Formação Acadêmica</h3>
-            <p> USJT - Bacharel em Administração - linha de formação específica em administração de empresas. Conclusão em 12/2015</p>
+            <P> USJT - Bacharel em Administração - linha de formação específica em administração de empresas. Conclusão em 12/2015</P>
             <h3>Cursos</h3>
-            <p>DevQuest - Mentoria especializada - Curso de especialização para desenvolver front-end - Conclusão em 01/2023</p>
-            <p>DIO – Curso de Trabalhando em Equipes Ágeis - Conclusão em 02/2023</p>
+            <P>DevQuest - Mentoria especializada - Curso de especialização para desenvolver front-end - Conclusão em 01/2023</P>
+            <P>DIO – Curso de Trabalhando em Equipes Ágeis - Conclusão em 02/2023</P>
 
             <h3>Experiências Profissionais</h3>
-            <p>26/11/2012 - 20/10/2013: Defensoria Pública de São Paulo – Estágio de Administração</p>
-            <p>01/04/2016 - atual: Alumínio Guima Indústria e Comercio Eireli - Assistente Administrativo</p>
+            <P>26/11/2012 - 20/10/2013: Defensoria Pública de São Paulo – Estágio de Administração</P>
+            <P>01/04/2016 - atual: Alumínio Guima Indústria e Comercio Eireli - Assistente Administrativo</P>
             <div className='habilits'>
                 <div>
                     <h3>Habilidades comportamentais</h3>
                     <ul>
-                        <li>Responsável</li>
-                        <li>Organizado</li>
-                        <li>Proativo</li>
-                        <li>Resiliente</li>
-                        <li>Ético</li>
-                        <li>Trabalho em equipe</li>
+                        <Li>Responsável</Li>
+                        <Li>Organizado</Li>
+                        <Li>Proativo</Li>
+                        <Li>Resiliente</Li>
+                        <Li>Ético</Li>
+                        <Li>Trabalho em equipe</Li>
                     </ul>
 
                 </div>
                 <div>
                     <h3>Metodologias ÁGEIS -<span>Noção</span></h3>
                     <ul>
-                        <li>Kanban</li>
-                        <li>OKR</li>
-                        <li>Extreme Programming (XP)</li>
-                        <li>Framework Scrum</li>
+                        <Li>Kanban</Li>
+                        <Li>OKR</Li>
+                        <Li>Extreme Programming (XP)</Li>
+                        <Li>Framework Scrum</Li>
                     </ul>
                 </div>
                 <div>
                     <h3>Habilidades técnicas</h3>
                     <div className='habilitsTec'>
-                        <p><FontAwesomeIcon icon={faHtml5} className='icon'/> <br/> HTML </p>
-                        <p><FontAwesomeIcon icon={faCss3Alt} className='icon'/> <br/> CSS </p>
-                        <p><FontAwesomeIcon icon={faJsSquare} className='icon'/> <br/>Javascript </p>
-                        <p><FontAwesomeIcon icon={faReact} className='icon'/> <br/> React </p>
-                        <p><FontAwesomeIcon icon={faCode    } className='icon'/> <br/>Clear Code</p>
-                        <p><FontAwesomeIcon icon={faFigma} className='icon'/> <br/> Figma </p>
-                        <p><FontAwesomeIcon icon={faGitAlt} className='icon'/> <br/> Git </p>
-                        <p><FontAwesomeIcon icon={faGithub} className='icon'/> <br/> GitHub </p>
-                        <p><FontAwesomeIcon icon={faJava} className='icon'/> <br/> Java</p>
-                        <p><FontAwesomeIcon icon={faDatabase} className='icon'/> <br/> MySQL</p>
+                        <P><FontAwesomeIcon icon={faHtml5} className='icon'/> <br/> HTML </P>
+                        <P><FontAwesomeIcon icon={faCss3Alt} className='icon'/> <br/> CSS </P>
+                        <P><FontAwesomeIcon icon={faJsSquare} className='icon'/> <br/>Javascript </P>
+                        <P><FontAwesomeIcon icon={faReact} className='icon'/> <br/> React </P>
+                        <P><FontAwesomeIcon icon={faCode    } className='icon'/> <br/>Clear Code</P>
+                        <P><FontAwesomeIcon icon={faFigma} className='icon'/> <br/> Figma </P>
+                        <P><FontAwesomeIcon icon={faGitAlt} className='icon'/> <br/> Git </P>
+                        <P><FontAwesomeIcon icon={faGithub} className='icon'/> <br/> GitHub </P>
+                        <P><FontAwesomeIcon icon={faJava} className='icon'/> <br/> Java</P>
+                        <P><FontAwesomeIcon icon={faDatabase} className='icon'/> <br/> SQL</P>
                         
                         {/* Falta arrumar o Icone -- encontrar */}
-                        <p><FontAwesomeIcon icon={faImage} className='icon'/> <br/> Springboot</p>
-                        <p><FontAwesomeIcon icon={faImage} className='icon'/> <br/> Style Componets</p>
+                        <P><FontAwesomeIcon icon={faImage} className='icon'/> <br/> Springboot</P>
+                        <P><FontAwesomeIcon icon={faImage} className='icon'/> <br/> Style Componets</P>
                     </div>
                 </div>
             </div>
+            <a href="/curriculum"> <FontAwesomeIcon className="btnTopPage" icon={faArrowCircleUp}/></a>
         </section>
     )
+}
+
+
+const P =(props)=>{
+    const {theme} = useContext(ThemeContext)
+    return <p {...props} style={{color:theme.color}}/>
+
+}
+const Li =(props)=>{
+    const {theme} = useContext(ThemeContext)
+    return <li {...props} style={{color:theme.color}}/>
+
 }
 export {Curriculum}

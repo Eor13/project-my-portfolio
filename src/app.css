@@ -1,5 +1,0 @@
-@import "./variables.css";
-
-.toggleColor{
-    background-color: var(--color-background);
-}

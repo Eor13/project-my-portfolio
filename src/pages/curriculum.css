@@ -9,18 +9,32 @@
 }
 
 .containerCurriculum h1, h3{
-    background-color: var(--color-titles);
+    background-color: var(--color-of-the-ends);
     font-family: var(--font-secondary);
     color: var(--color-background);
     letter-spacing: 2px;
-    font-size: 2rem;
     border-radius: 2px;
+    font-size: 2rem;
     width: 98%;
     margin: 10px auto;
     display: flex;
     justify-content: center;
 }
-.containerCurriculum p{
+.containerCurriculum span{
+    font-size: 2rem;
+    background-color: var(--color-of-the-ends);
+    font-family: var(--font-secondary);
+    color: var(--color-background);
+
+}
+.containerCurriculum h1.title{
+    background-color: var(--color-titles);
+    color: var(--color-background);
+    font-size: 3.5rem;
+
+}
+
+.containerCurriculum p {
     text-align: justify;
     padding: 0 15px;
     margin-bottom: 20px;

@@ -1,19 +1,16 @@
 import { NavBar } from "./pages/navbar";
-import { AppRoutes } from "./pages/routes";
-import './app.css'
 import { Footer } from "./pages/footer";
-
+import { Body } from "./pages/body";
+import { ThemeProvider } from "./services/themeContext";
 
 function App() {
   return (
-    < >
-      <NavBar/> 
-      <main className="toggleColor">
-        <AppRoutes/>
-      </main>
+    <ThemeProvider>
+      <NavBar /> 
+      <Body/>
       <Footer/> 
-    </>
+    </ThemeProvider>
   );
 }
+export default App; 
 
-export default App ;

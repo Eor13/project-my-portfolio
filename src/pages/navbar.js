@@ -1,5 +1,6 @@
+import { ThemeTogglerButton } from "../components/themeTogglerButton";
 import "./navbar.css";
-import lodding from "../images/climbing-stairs.png";
+// import lodding from "../images/climbing-stairs.png";
 
 const NavBar =() =>{
     return(
@@ -8,6 +9,7 @@ const NavBar =() =>{
                 {/* <img src={lodding} alt="Aprimorando..."/> */}
                 <a href="/"><h1 className="default">Everson de Oliveira</h1></a>
             </div>
+            <ThemeTogglerButton />  
             <nav>
                 <li><a className="default" href="/">Sobre</a></li>
                 <li><a className="default" href="/projects">Projetos</a></li>

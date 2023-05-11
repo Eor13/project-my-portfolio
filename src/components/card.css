@@ -1,7 +1,8 @@
 @import "../variables.css";
 
 .card{
-    background-color: var(--color-of-the-ends);
+    /* background-color: var(--color-of-the-ends); */
+    background-color: var(--color-details);
     padding: 10px;
     border-radius: 20px;
     display: flex;
@@ -17,7 +18,8 @@
 }
 
 .card button{
-    background-color: var(--color-details);
+    /* background-color: var(--color-details); */
+    background-color: var(--color-of-the-ends);
     border-radius: 30px;
     padding: 8px;
     justify-content: end;
@@ -27,7 +29,6 @@
 }
 .card button:hover{
     box-shadow:  0px 7px 2px 0px rgba(100, 100, 111, 0.705);
-    background-color: var(--color-details);
     padding: 8px;
     border-radius: 25px;
     transform: scale(1.1,1.1);
@@ -37,7 +38,7 @@
     
 }
 .display{
-    border:8px solid var(--color-details);
+    border:8px solid var(--color-of-the-ends);
     border-radius: 15px 0;
     width: 100%;
     max-height: 350px;

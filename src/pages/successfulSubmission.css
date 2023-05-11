@@ -1,0 +1,10 @@
+.containerSuccessful{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+}
+.containerSuccessful .thanks{
+    width: 30%;
+    font-size: 2rem;
+}

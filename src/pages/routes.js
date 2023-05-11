@@ -3,6 +3,7 @@ import { Projects } from "./projects";
 import { Contact } from "./contact";
 import { Curriculum } from "./Curriculum";
 import { About } from "./about";
+import { SuccessfulSubmission } from "./successfulSubmission";
 
 
 const AppRoutes =() =>{
@@ -14,6 +15,7 @@ const AppRoutes =() =>{
                 <Route exact path="/projects" element={<Projects/>}/>
                 <Route exact path="/curriculum" element={<Curriculum/>}/>
                 <Route exact path="/contact" element={<Contact/>}/>
+                <Route exact path="/successfulSubmission" element={<SuccessfulSubmission/>}/>
             </Routes>
         </BrowserRouter>
     )
