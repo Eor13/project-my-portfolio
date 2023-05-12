@@ -1,14 +1,19 @@
-import { NavBar } from "./pages/navbar";
-import { Footer } from "./pages/footer";
-import { Body } from "./pages/body";
-import { ThemeProvider } from "./services/themeContext";
+import { ThemeProvider, themes } from "./services/themeContext";
+import { NavBar } from "./components/navbar";
+import { Body } from "./components/body";
+import { Footer } from "./components/footer"
+import { GlobalStyle } from "./globalStyles";
+
+
 
 function App() {
+  console.log(themes)
   return (
-    <ThemeProvider>
-      <NavBar /> 
+    <ThemeProvider theme={themes.dark}>
+      <GlobalStyle/>
+      <NavBar/>
       <Body/>
-      <Footer/> 
+      <Footer/>
     </ThemeProvider>
   );
 }

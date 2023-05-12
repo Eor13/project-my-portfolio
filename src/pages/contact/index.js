@@ -1,6 +1,6 @@
-import "./contact.css";
+import "./style.css";
 import { useContext } from 'react';
-import { ThemeContext } from '../services/themeContext';
+import { ThemeContext } from '../../services/themeContext';
 
 const Contact =() =>{
     const {theme} = useContext(ThemeContext)

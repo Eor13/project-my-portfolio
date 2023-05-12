@@ -1,30 +1,30 @@
 import { createContext, useState } from "react";
 
+  
 
 const themes = {
     dark:{
-        fontPrincipal: 'Spline Sans Mono , monospace',
-        fontSecondary:'Audiowide cursive',
-        colorDetails: '#F2CF66',
-        colorOfTheEnds: '#F25C05',
-        colorTitles: '#F24405',
         colorText: '#F2F2F2',
         colorBackgroung: '#0D0D0D',
         color: '#fff',
-        background: '#000'
-    },
-    light:{
+        background: '#000',
         fontPrincipal: 'Spline Sans Mono , monospace',
         fontSecondary:'Audiowide cursive',
         colorDetails: '#F2CF66',
         colorOfTheEnds: '#F25C05',
         colorTitles: '#F24405',
+    },
+    light:{
+        
         colorText: '#0D0D0D',
         colorBackgroung: '#F2F2F2',
-        color: '#000',
-        background: '#fff'
+        fontPrincipal: 'Spline Sans Mono , monospace',
+        fontSecondary:'Audiowide cursive',
+        colorDetails: '#F2CF66',
+        colorOfTheEnds: '#F25C05',
+        colorTitles: '#F24405',
     }
-};  
+};
 
 const ThemeContext = createContext({});
 

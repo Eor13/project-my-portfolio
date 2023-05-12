@@ -1,4 +1,4 @@
-@import "../variables.css";
+/* @import "../../variables.css"; */
 
 .card{
     /* background-color: var(--color-of-the-ends); */
@@ -34,7 +34,7 @@
     transform: scale(1.1,1.1);
 }
 .card button a{
-    color: white;
+    color: white;   
     
 }
 .display{

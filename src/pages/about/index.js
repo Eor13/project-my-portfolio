@@ -1,9 +1,9 @@
 import { faGithubAlt, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import './about.css';
-import { faArrowCircleUp } from "@fortawesome/free-solid-svg-icons";
+import './style.css';
 import { useContext } from 'react';
-import { ThemeContext } from '../services/themeContext';
+import { ThemeContext } from '../../services/themeContext';
+import { ButtonScrollTop } from "../../components/buttons";
 
 const About = () => {
     return(
@@ -28,7 +28,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            <a href="/"><Icon icon={faArrowCircleUp}/> </a>  
+            <ButtonScrollTop link='/'/>   
         </>
     )
 }

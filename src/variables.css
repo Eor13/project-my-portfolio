@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@300;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@300;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 :root{
@@ -6,15 +6,15 @@
     --color-font-principal:#F2CB05;
     --color-details:#F2B807;
     --color-titles:#8C6A04;
-    --color-background:#0D0D0D; */
+    --color-background:#0D0D0D; *
     --font-principal: 'Spline Sans Mono', monospace;
     --font-secondary:'Audiowide', cursive;
 
-    /* Color Theme Swatches in Hex */
+    /* Color Theme Swatches in Hex *
     --color-details: #F2CF66;
     --color-of-the-ends: #F25C05;
     --color-titles: #F24405;
     --color-font-principal: #F2F2F2;
     --color-background: #0D0D0D;
 
-}
+} */

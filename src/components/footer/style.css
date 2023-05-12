@@ -1,4 +1,4 @@
-@import "../variables.css";
+/* @import "../../variables.css"; */
 
 .containerFooter{
     background-color: var(--color-of-the-ends);
@@ -10,9 +10,6 @@
 }
 .containerFooter .redes, .contact{
     text-align:center;
-}
-.containerFooter h4{
-    margin-bottom: 10px;
 }
 .containerFooter .icon{
     padding-right: 10px;

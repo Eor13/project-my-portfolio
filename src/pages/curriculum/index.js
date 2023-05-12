@@ -1,10 +1,11 @@
-import './curriculum.css'
+import './style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faHtml5, faCss3Alt, faJsSquare, faReact, faJava, faFigma, faGitAlt} from "@fortawesome/free-brands-svg-icons";
-import { faCode, faDatabase, faImage, faArrowCircleUp } from "@fortawesome/free-solid-svg-icons";
+import { faCode, faDatabase, faImage } from "@fortawesome/free-solid-svg-icons";
 
 import { useContext } from 'react';
-import { ThemeContext } from '../services/themeContext';
+import { ThemeContext } from '../../services/themeContext';
+import { ButtonScrollTop } from '../../components/buttons';
 
 
 const Curriculum =() =>{
@@ -67,7 +68,7 @@ const Curriculum =() =>{
                     </div>
                 </div>
             </div>
-            <a href="/curriculum"> <FontAwesomeIcon className="btnTopPage" icon={faArrowCircleUp}/></a>
+            <ButtonScrollTop link='/curriculum'/>   
         </section>
     )
 }

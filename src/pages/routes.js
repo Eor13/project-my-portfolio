@@ -1,7 +1,7 @@
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import { Projects } from "./projects";
 import { Contact } from "./contact";
-import { Curriculum } from "./Curriculum";
+import { Curriculum } from "./curriculum";
 import { About } from "./about";
 import { SuccessfulSubmission } from "./successfulSubmission";
 
