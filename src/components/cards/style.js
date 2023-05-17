@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import { themes } from "../../services/themeContext";
 
 const Card = styled.div`
-    background-color: ${themes.colorDetails};
+    background-color: ${({theme}) => themes.dark.colorDetails};
     padding: 10px;
     border-radius: 20px;
     display: flex;
@@ -12,21 +12,25 @@ const Card = styled.div`
 `
 
 const Title =styled.h3`
-    border-radius: 8px 8px  0 0;  
+    border-radius: 8px 8px  0 0;
+    background-color: ${({theme}) => theme.colorOfTheEnds};
+    margin-bottom: 2px;
+    width: 80%;
+    font-size: 2.2rem;
 `
 const  Description =styled.p`
-    color: ${themes.colorBackground};
+    color: ${themes.dark.colorSecondary};
 `
 const DisplayImage =styled.img`
-    background-color: ${themes.colorOfTheEnds};
     border-radius: 15px 0;
     width: 100%;
     max-height: 350px;
     margin-bottom: 15px;
+    border:8px solid ${({theme}) => theme.colorOfTheEnds};
 `
 const ButtonLink =styled.button`
     /* background-color: ${themes.colorDetails}; */
-    background-color: ${themes.colorOfTheEnds};
+    background-color: ${({theme}) => theme.colorOfTheEnds};
     border-radius: 30px;
     padding: 8px;
     justify-content: end;
@@ -41,7 +45,7 @@ const ButtonLink =styled.button`
     }
 `
 const LinkExt =styled.a`
-    color: ${themes.colorOfTheEnds};
+    color: ${({theme}) => theme.colorSecondary};
 `
 
 

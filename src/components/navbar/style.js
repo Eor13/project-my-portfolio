@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import { themes } from "../../services/themeContext";
 
 const ContainerNav  = styled.header`
-    background-color: ${ themes.colorOfTheEnds};
+    background-color: ${ ({theme}) => theme.colorOfTheEnds};
     display: flex;
     justify-content: space-between;
     align-items: center ;
@@ -17,7 +17,7 @@ const BoxName =styled.div`
 const Name = styled.h1`
     margin: 0;
     font-size: 3rem;
-    color: ${props => props.theme.colorText};
+    color: ${themes.dark.colorSecondary};
 `
 const Menu = styled.nav`
     display: flex;
@@ -32,11 +32,11 @@ const Link =styled.a`
     margin: 0.3rem;
     font-size: 1.9rem;
     transition: background-color 0.5s ease-in-out;
-    color: ${ props => props.theme.colorText};
+    color: ${themes.dark.colorSecondary};
 
     &:hover{
     box-shadow:  0px 7px 2px 0px rgba(100, 100, 111, 0.429);
-    background-color: ${props => props.theme.colorDetails};
+    background-color: ${({theme}) => theme.colorDetails};
     padding: 8px;
     border-radius: 25px;
 }

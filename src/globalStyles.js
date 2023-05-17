@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import { themes } from "./services/themeContext";
+// console.log(theme)
 
 export const GlobalStyle  =  createGlobalStyle`
   html{
@@ -10,9 +11,7 @@ export const GlobalStyle  =  createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: ${ themes.fontPrincipal };
-    color: ${themes.colorPrincipal};
-    // color: ${themes.colorDetails};
+    font-family: ${themes.font.fontPrincipal};
     font-size: 1.5rem;
   }
 

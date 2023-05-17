@@ -1,4 +1,4 @@
-import { ThemeProvider, themes } from "./services/themeContext";
+import { ThemeeProvider, themes } from "./services/themeContext";
 import { NavBar } from "./components/navbar";
 import { Body } from "./components/body";
 import { Footer } from "./components/footer"
@@ -9,12 +9,12 @@ import { GlobalStyle } from "./globalStyles";
 function App() {
   console.log(themes)
   return (
-    <ThemeProvider theme={themes.dark}>
+    <ThemeeProvider theme={themes}>
       <GlobalStyle/>
       <NavBar/>
       <Body/>
       <Footer/>
-    </ThemeProvider>
+    </ThemeeProvider>
   );
 }
 export default App; 
