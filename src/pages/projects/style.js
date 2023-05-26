@@ -23,6 +23,7 @@ const Intro =styled.p`
     text-align: justify;
     padding: 0 15px;
     font-size: 1.7rem;
+    font-weight:${({theme}) => theme === themes.dark ? 300 : 500};
 `
 const ListCardProjects = styled.div`
     display: flex;

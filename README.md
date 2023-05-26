@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Meu Portfólio React
+Projeto realizado para prática de conceitos com objetivo acadêmico e junto com a apresentação das minhas habilidades técnicas  na área, projeto idealizado por mim.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src ="" alt="Imagem da tela inicial do projeto.">
+<strong style="color:brown;">Prévia do design da Quest com detalhamento de suas Funcionalidades.</strong>
 
-## Available Scripts
 
-In the project directory, you can run:
+O objetivo foi construir em React um Portfólio para apresentação das minhas capacidades, as principais cores escolhidas do projeto foram yin que representar o escuro e yang que representar o claro.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<a href="" target="_blank">Clique Aqui para ir direto para página</a>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologias utilizadas
+- Javascript
+- React
+- Styled Component
+- ForSubmit
+- Vercel
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Conceitos Aplicados de cada Tecnologia
+<ol>
+    <li>Javascript
+        <ul>
+            <li>Utilização de Operadores Ternários</li>
+            <li>Utilização de Higher Order Functions</li>
+            <li>Utilização de Variáveis em diferentes tipos de Escopo</li>
+            <li>Utilização do módulos ( import e export ) </li>
+        </ul>
+    </li>
+    <li>React
+        <ul>
+            <li>Uso do Create React App para criar o projeto </li>
+            <li>Utilização de componentes de Função</li>
+            <li>Utilização de Elementos de Função</li>
+            <li>Utilização de Props</li>
+            <li>Utilização de Eventos de "Click e Change"</li>
+            <li>Utilização de múltiplos componentes - aninhados</li>
+            <li>Utilização de Arrow functions como padrão para estabelecer Funções</li>
+            <li>Utilização de Components Stateless e StateFull</li>
+            <li>Utilização de Hooks como useState e useEffect</li>
+            <li>Utilização de Formulários</li>
+            <li>Renderização de Condicionais</li>
+            <li>Utilização de Rotas com ReactRouter</li>
+            <li>Atribuição via Desestruturação de Itens</li>
+        </ul>
+    </li>
+    <li>CSS
+        <ul>
+            <li>Utilização de <strong style="color:green;">Styled Components através do React</strong> para estilização das páginas</li>
+        </ul>
+    </li>
+    <li>Libs e Ferramentas
+        <ul>
+            <li>Vercel - Utilização de plataforma para exibição página nos navegadores.</li>
+            <li>Formsubmit - utilização da ferramenta para envio de email. </li>
+            <li>LocalStorage - utilização da ferramenta armazenamento de tema. </li>
+        </ul>
+    </li>
+</ol>

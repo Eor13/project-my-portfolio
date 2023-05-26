@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { styled } from "styled-components";
 import { themes } from "../../services/themeContext";
 
@@ -6,7 +7,6 @@ const ContainerCurriculum =styled.section`
     flex-direction: column;
     text-align: justify;
     padding: 2% 5%;
-    /* min-height: 80vh; */
 `
 const TitlePrincipal =styled.h1`
     background-color: ${({theme}) => theme.colorTitles};
@@ -19,6 +19,10 @@ const TitlePrincipal =styled.h1`
     margin: 10px auto;
     display: flex;
     justify-content: center;
+    @media(max-width:500px){
+        font-size: 2.2rem;
+    }
+    
 `
 const TitleSecondary =styled.h3`
     background-color: ${({theme}) => theme.colorOfTheEnds};
@@ -31,6 +35,10 @@ const TitleSecondary =styled.h3`
     margin: 10px auto;
     display: flex;
     justify-content: center;
+    @media(max-width:500px){
+        font-size: 1.6rem;
+        width: 100%;
+    }
 `
 const Nota = styled.span`
     font-size: 2rem;
@@ -41,17 +49,26 @@ const Nota = styled.span`
 `
 
 const Text = styled.p`
-    text-align: justify;
     padding: 0 15px;
     margin-bottom: 20px;
     color: ${({theme}) => theme.colorPrimary};
+    font-weight:${({theme}) => theme === themes.dark ? 300 : 500};
     font-size: 1.6rem;
+    @media(max-width:500px){
+        font-size: 1.4rem;
+    }
+`
+const Logos = styled(FontAwesomeIcon)`
+    width: 40px;
+    height: 40px;
+    padding-bottom: 8px;
 `
 const Ul = styled.ul`
     padding-left: 10px;
     list-style-position: inside;
     & li{
-        color:${({theme})=> theme.colorPrimary}; 
+        color:${({theme})=> theme.colorPrimary};
+        font-weight:${({theme}) => theme === themes.dark ? 300 : 500}; 
     };
 `
 
@@ -59,15 +76,27 @@ const BoxHabilits = styled.div`
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: center;
-    gap: 15px;
-    & div{
+    gap: 15px 30px;
+    div{
         min-width: 48%;
+    }
+    @media(max-width:900px){
+        flex-flow:column-reverse ;
     }
 `
 const HabilitsTec = styled.div`
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+    & p{
+        text-align: center;
+        margin-bottom: 20px;
+        color: ${({theme}) => theme.colorPrimary};
+        padding: 0 15px;
+        text-decoration: overline;
+        font-weight:${({theme}) => theme === themes.dark ? 300 : 500};
+    }
 `
 
-export {HabilitsTec, BoxHabilits, ContainerCurriculum, TitlePrincipal, TitleSecondary, Nota, Ul, Text}
+export {HabilitsTec, BoxHabilits, ContainerCurriculum, TitlePrincipal, TitleSecondary, Nota, Ul, Text, Logos}

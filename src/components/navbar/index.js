@@ -1,21 +1,32 @@
-import { themes } from "../../services/themeContext";
+import {useState} from "react";
 import { ThemeTogglerButton } from "../themeTogglerButton";
-import { BoxName, ContainerNav, Link, Menu, Name } from "./style";
+import { BoxName, ContainerNav, Link, Nav, Name, Ul, Menu} from "./style";
 
 const NavBar =() =>{
-    console.log(themes)
+    const [open, setOpen] = useState(false)
     return(
         <ContainerNav >
             <BoxName>
                 <a href="/"><Name>Everson de Oliveira</Name></a>
             </BoxName>
+
             <ThemeTogglerButton/> 
-            <Menu>
-                <Link href="/">Sobre</Link>
-                <Link href="/projects">Projetos</Link>
-                <Link href="/curriculum">Currículo</Link>
-                <Link href="/contact">Contato</Link>
-            </Menu>
+            
+            <Nav>
+                <Menu open={open} onClick={() => setOpen(!open)}>
+                    <div open={open}/>
+                    <div open={open}/>
+                    <div open={open}/>
+                </Menu>
+                
+                <Ul open={open}>
+                    <li> <Link open={open} href="/">Sobre</Link> </li>
+                    <li> <Link open={open} href="/projects">Projetos</Link> </li>
+                    <li> <Link open={open} href="/curriculum">Currículo</Link> </li>
+                    <li> <Link open={open} href="/contact">Contato</Link> </li>
+                </Ul>
+        
+            </Nav>
         </ContainerNav>
     )
 }

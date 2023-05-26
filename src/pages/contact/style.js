@@ -1,18 +1,23 @@
 import { styled } from "styled-components";
-import { themes } from "../../services/themeContext";
 
 const ContainerForm = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 75vh;
+    min-height: 70.5vh;
+    @media(max-width: 500px) {
+        width: 85%;
+    }
 `
 
 const Title = styled.h1`
-font-size: 2rem;
-margin: 15px 0;
-color:${({theme}) => theme.colorPrimary}
+    font-size: 2rem;
+    margin: 15px 0;
+    color:${({theme}) => theme.colorPrimary};
+    @media(max-width: 500px) {
+        font-size: 1.8rem;
+    }
 `
 
 const FormControl = styled.input`
@@ -22,8 +27,8 @@ const FormControl = styled.input`
     padding: 10px;
     max-height: 350px;
     margin-bottom: 15px;
-    color: ${themes.dark.colorSecondary};
-    background-color: ${ themes.dark.colorPrimary};
+    color: ${({theme}) => theme.colorSecondary};
+    background-color: ${({theme}) => theme.colorPrimary};
 `
 
 const Row = styled.div`
@@ -35,8 +40,9 @@ const Row = styled.div`
 `
 const BtnSubmit = styled.button`
     width: 50%;
-    background-color: ${themes.dark.colorPrimary};
+    background-color: ${({theme}) => theme.colorPrimary};
     border:8px solid ${({theme}) => theme.colorDetails};
+    color: ${({theme}) => theme.colorSecondary};
     border-radius: 8px ;
     padding: 10px;
     max-height: 350px;
@@ -48,10 +54,10 @@ const Textarea = styled.textarea`
     border-radius: 8px ;
     width: 100%;
     padding: 10px;
-    max-height: 350px;
+    max-height: 300px;
     margin-bottom: 15px;
-    color: ${themes.dark.colorSecondary};
-    background-color: ${themes.dark.colorPrimary};
+    color: ${({theme}) => theme.colorSecondary};
+    background-color: ${({theme}) => theme.colorPrimary};
 `
 
 export {BtnSubmit, FormControl, Row, Title, ContainerForm, Textarea}

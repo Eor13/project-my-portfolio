@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { ThemeProvider } from "styled-components";
 
 const themes = {
@@ -26,13 +26,27 @@ const themes = {
 const ThemeContext = createContext({});
 
 const ThemeeProvider = ({children}) => {
-    const [theme, setTheme] = useState( themes.dark )
     
-    console.log(theme)
+    // Estado para armazenar o tema
+    const [theme, setTheme] = useState()
+    useEffect(() => {
+        // Buscar o tema do localStorage no momento do carregamento inicial
+        let savedTheme = localStorage.getItem('theme')
+        setTheme(savedTheme ? JSON.parse(savedTheme) : null) //JSON PArse transforma de String para JSON
+        // console.log(JSON.parse(savedTheme))
+    },[])
+    // Função para atualizar o tema
+    const upDateTheme = (newTheme) =>{
+        setTheme(newTheme)
+        // console.log(newTheme)
+        localStorage.setItem('theme', JSON.stringify(newTheme)) //JSON PArse transforma de JSON para  String
+    }
 
+   
     return(
-        <ThemeContext.Provider value={{theme, setTheme}}>
+        <ThemeContext.Provider value={{theme, upDateTheme }}>
             <ThemeProvider theme = {typeof theme === 'object' ? theme : themes.light}>
+            {/* <ThemeProvider theme = {theme === themes.dark ? themes.light : themes.dark}> */}
                 {children}
             </ThemeProvider>
         </ThemeContext.Provider>

@@ -4,8 +4,8 @@ import { TogglerButton } from "./buttons";
 
 
 const ThemeTogglerButton =() =>{
-    const { theme, setTheme } = useContext( ThemeContext )
-    return <TogglerButton onClick={() => setTheme(theme === themes.dark ? themes.light : themes.dark)}/>
+    const { theme, upDateTheme } = useContext( ThemeContext )
+    return <TogglerButton onClick={() => upDateTheme(theme === themes.dark ? themes.light : themes.dark)}/>
 };
 
 export {ThemeTogglerButton};

@@ -7,7 +7,6 @@ import { GlobalStyle } from "./globalStyles";
 
 
 function App() {
-  console.log(themes)
   return (
     <ThemeeProvider theme={themes}>
       <GlobalStyle/>
