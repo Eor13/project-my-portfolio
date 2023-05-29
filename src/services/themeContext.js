@@ -26,27 +26,33 @@ const themes = {
 const ThemeContext = createContext({});
 
 const ThemeeProvider = ({children}) => {
-    
-    // Estado para armazenar o tema
-    const [theme, setTheme] = useState()
-    useEffect(() => {
         // Buscar o tema do localStorage no momento do carregamento inicial
+    const getItemsLocalStorage =() =>{
         let savedTheme = localStorage.getItem('theme')
-        setTheme(savedTheme ? JSON.parse(savedTheme) : null) //JSON PArse transforma de String para JSON
-        // console.log(JSON.parse(savedTheme))
-    },[])
+        let tests = savedTheme ? JSON.parse(savedTheme) : []
+        console.log(tests) 
+        //JSON PArse transforma de String para JSON
+    }
+    
+        // Estado para armazenar o tema
+    const [theme, setTheme] = useState(getItemsLocalStorage())
+    console.log(theme)
+    
+    
     // Função para atualizar o tema
     const upDateTheme = (newTheme) =>{
-        setTheme(newTheme)
-        // console.log(newTheme)
         localStorage.setItem('theme', JSON.stringify(newTheme)) //JSON PArse transforma de JSON para  String
+        setTheme(newTheme)
+        console.log(newTheme)   
     }
-
+    // useEffect(() =>{
+    //     localStorage.setItem("theme", JSON.stringify(theme))
+    //   },[theme])
    
     return(
         <ThemeContext.Provider value={{theme, upDateTheme }}>
-            <ThemeProvider theme = {typeof theme === 'object' ? theme : themes.light}>
-            {/* <ThemeProvider theme = {theme === themes.dark ? themes.light : themes.dark}> */}
+            {/* <ThemeProvider theme = {typeof theme === 'object' ? theme : themes.light}> */}
+            <ThemeProvider theme = {theme === themes.dark ? themes.light : themes.dark}>
                 {children}
             </ThemeProvider>
         </ThemeContext.Provider>

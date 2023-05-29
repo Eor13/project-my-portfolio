@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ContainerAbout =styled.section`
     display: flex;
-    width:95vw;
+    width:98vw;
     min-height: 73vh;
     align-items: center;
     @media(max-width:900px){

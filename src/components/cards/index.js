@@ -10,7 +10,7 @@ const CardProject = ({title, image, description, link, label, techs}) =>{
             <Title>{title}</Title>
             <DisplayImage className="display" src={image} alt="Everson"/>
             <Description>{description}</Description>
-            <Ul>Tecnologias Aplicadas
+            <Ul>Tecnologias Utilizadas
                 {      
                     techs.map((tech,index) =>{
                         return (
