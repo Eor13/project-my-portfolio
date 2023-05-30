@@ -27,32 +27,31 @@ const ThemeContext = createContext({});
 
 const ThemeeProvider = ({children}) => {
         // Buscar o tema do localStorage no momento do carregamento inicial
+
+    //1- Aqui nessa função getItemsLocalStorage, você não ta retornando nada. Quando você usa essa função como um argumento hook do useState para pegar o estado inicial, ela não vai retornar um valor o que é um problma porque o estado do tema seria undefined.
+    //2 - você estava salvando no localstorage um objeto muito grande e o localstorage é feito para salvar coisas pequenas. Então eu mudei para salvar apenas o nome do tema.
     const getItemsLocalStorage =() =>{
-        let savedTheme = localStorage.getItem('theme')
-        let tests = savedTheme ? JSON.parse(savedTheme) : []
-        console.log(tests) 
-        //JSON PArse transforma de String para JSON
+        const savedTheme = localStorage.getItem('theme');
+        // Se tiver um tema no armazenamento local, retorna, senão retorne 'light'
+        return savedTheme ? savedTheme : 'light';
     }
     
-        // Estado para armazenar o tema
-    const [theme, setTheme] = useState(getItemsLocalStorage())
-    console.log(theme)
+    // Estado para armazenar o tema
+    const [theme, setTheme] = useState(getItemsLocalStorage());
     
     
     // Função para atualizar o tema
-    const upDateTheme = (newTheme) =>{
-        localStorage.setItem('theme', JSON.stringify(newTheme)) //JSON PArse transforma de JSON para  String
-        setTheme(newTheme)
-        console.log(newTheme)   
+    const updateTheme = (newTheme) => {
+        setTheme(newTheme);
     }
-    // useEffect(() =>{
-    //     localStorage.setItem("theme", JSON.stringify(theme))
-    //   },[theme])
+    
+    useEffect(() => {
+        localStorage.setItem('theme', theme);
+    }, [theme]);
    
     return(
-        <ThemeContext.Provider value={{theme, upDateTheme }}>
-            {/* <ThemeProvider theme = {typeof theme === 'object' ? theme : themes.light}> */}
-            <ThemeProvider theme = {theme === themes.dark ? themes.light : themes.dark}>
+        <ThemeContext.Provider value={{theme, updateTheme }}>
+            <ThemeProvider theme={themes[theme]} key={theme}>
                 {children}
             </ThemeProvider>
         </ThemeContext.Provider>
