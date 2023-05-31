@@ -91,7 +91,7 @@ const HabilitsTec = styled.div`
     justify-content: space-between;
     & p{
         text-align: center;
-        margin-bottom: 20px;
+        margin: 5px;
         color: ${({theme}) => theme.colorPrimary};
         padding: 0 15px;
         text-decoration: overline;
