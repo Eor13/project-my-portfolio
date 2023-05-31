@@ -98,5 +98,12 @@ const HabilitsTec = styled.div`
         font-weight:${({theme}) => theme === themes.dark ? 300 : 500};
     }
 `
+const ImgSpring = styled.img`
+    width: 45px;
+    padding-bottom: 8px;
+`
+const ImgStyled = styled.img`
+    width: 65px;
+`
 
-export {HabilitsTec, BoxHabilits, ContainerCurriculum, TitlePrincipal, TitleSecondary, Nota, Ul, Text, Logos}
+export {HabilitsTec, BoxHabilits, ContainerCurriculum, TitlePrincipal, TitleSecondary, Nota, Ul, Text, Logos, ImgSpring, ImgStyled }

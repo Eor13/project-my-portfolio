@@ -25,8 +25,8 @@ const DisplayImage = styled.div`
     animation-name: openningImage;
     animation-duration: 6s;
     @keyframes  openningImage{
-        0% { opacity: 0.1;}
-        100%{ opacity: 1;}
+        0% { opacity: 0.05; }
+        100%{ opacity: 1; }
     }
     img{
         max-width:400px;
@@ -66,8 +66,8 @@ const Title = styled.h1`
     animation-name: openningText;
     animation-duration: 6s;
     @keyframes  openningText{
-        0% { opacity: 0.05;}
-        100%{ opacity: 1;}
+        0% { opacity: 0.05; }
+        100%{ opacity: 1; }
     }
 `
 const StyleFontAwesomeIconSocialMediasAbout = styled(FontAwesomeIcon)`

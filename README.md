@@ -1,14 +1,16 @@
 # Meu Portfólio React
+<div style="text-align: justify">
 Projeto realizado para prática de conceitos com objetivo acadêmico e junto com a apresentação das minhas habilidades técnicas  na área, projeto idealizado por mim.
 
-<img src ="" alt="Imagem da tela inicial do projeto.">
-<strong style="color:brown;">Prévia do design da Quest com detalhamento de suas Funcionalidades.</strong>
+<img src ="src/images/project-my-portfolio.png" alt="Imagem da tela inicial do projeto.">
 
 
 O objetivo foi construir em React um Portfólio para apresentação das minhas capacidades, as principais cores escolhidas do projeto foram yin que representar o escuro e yang que representar o claro.
 
+</div>
 
-<a href="" target="_blank">Clique Aqui para ir direto para página</a>
+
+<a href="https://project-my-portfolio-eor13.vercel.app/" target="_blank">Clique Aqui para ir direto para página</a>
 
 ## Tecnologias utilizadas
 - Javascript

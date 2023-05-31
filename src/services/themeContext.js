@@ -21,42 +21,38 @@ const themes = {
         fontPrincipal: 'Spline Sans Mono , monospace',
         fontSecondary:'Audiowide, cursive',
     }
-};
+}
 
 const ThemeContext = createContext({});
 
 const ThemeeProvider = ({children}) => {
-        // Buscar o tema do localStorage no momento do carregamento inicial
+    // Buscar o tema do localStorage no momento do carregamento inicial
     const getItemsLocalStorage =() =>{
-        let savedTheme = localStorage.getItem('theme')
-        let tests = savedTheme ? JSON.parse(savedTheme) : []
-        console.log(tests) 
-        //JSON PArse transforma de String para JSON
+        const savedTheme = localStorage.getItem('theme')
+        // Se tiver um tema no armazenamento local, retorna, senão retorne 'dark'
+        return savedTheme ? savedTheme : 'dark' 
     }
     
-        // Estado para armazenar o tema
+    // Estado para armazenar o tema
     const [theme, setTheme] = useState(getItemsLocalStorage())
-    console.log(theme)
-    
-    
+
     // Função para atualizar o tema
     const upDateTheme = (newTheme) =>{
-        localStorage.setItem('theme', JSON.stringify(newTheme)) //JSON PArse transforma de JSON para  String
-        setTheme(newTheme)
-        console.log(newTheme)   
+        setTheme(newTheme) 
     }
-    // useEffect(() =>{
-    //     localStorage.setItem("theme", JSON.stringify(theme))
-    //   },[theme])
+    
+    useEffect(() =>{
+        localStorage.setItem("theme",theme)
+      },[theme])
    
     return(
-        <ThemeContext.Provider value={{theme, upDateTheme }}>
+        <ThemeContext.Provider value={{ theme, upDateTheme }}>
             {/* <ThemeProvider theme = {typeof theme === 'object' ? theme : themes.light}> */}
-            <ThemeProvider theme = {theme === themes.dark ? themes.light : themes.dark}>
+            <ThemeProvider theme = {themes[theme]} key={theme}>
                 {children}
             </ThemeProvider>
         </ThemeContext.Provider>
-    );
-};
+    )
+}
 
 export{ThemeContext , themes, ThemeeProvider};

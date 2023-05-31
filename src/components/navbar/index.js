@@ -1,5 +1,5 @@
 import {useState} from "react";
-import { ThemeTogglerButton } from "../themeTogglerButton";
+import { ThemeTogglerButton } from "../buttons";
 import { BoxName, ContainerNav, Link, Nav, Name, Ul, Menu} from "./style";
 
 const NavBar =() =>{

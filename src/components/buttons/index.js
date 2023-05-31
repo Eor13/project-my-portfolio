@@ -1,5 +1,6 @@
 import { faArrowCircleUp } from "@fortawesome/free-solid-svg-icons";
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext} from "../../services/themeContext" 
 import { ButtonTheme, LinksFooter, SpanTheme, StyleFontAwesomeIconArrowCircleUp } from "./style";
 import yinYang from "../../images/yin-yang.png"
 
@@ -22,5 +23,17 @@ const LinkSocialMedias =(props) =>{
     return <LinksFooter {...props} target="_blank" rel="noreferrer"/>
 }
 
+const ThemeTogglerButton =() =>{
+    const { theme, upDateTheme } = useContext(ThemeContext);
 
-export {ButtonScrollTop, TogglerButton, LinkSocialMedias };
+    const toggleTheme = () => {
+        const newTheme = theme === 'dark' ? 'light' : 'dark'
+        upDateTheme(newTheme);
+    }
+    
+    return <TogglerButton onClick={toggleTheme} />
+
+};
+
+
+export {ButtonScrollTop, TogglerButton, LinkSocialMedias, ThemeTogglerButton };

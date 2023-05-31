@@ -21,7 +21,7 @@ const Projects =() =>{
 
                     <CardProject title ='GitHub Api data search page' image={Project2} description ='Projeto realizado para Desafio do Curso DevQuest tendo o objetivo de cria uma página que consuma a API do GitHub, onde conseguimos buscar um usuário e rotornar seu Nome, Perfil, Ultimos repositórios alterados, eventos, etc... ' techs= {['HTML', 'CSS', 'Javascript']} link='https://eor13.github.io/projeto-api-github-mundo-real-com-fetch/'/>    
                     
-                    <CardProject title ='My Portfolio' image={Project3} description ='Projeto realizado para prática de conceitos com objetivo acadêmico e junto com a apresentação das minhas habilidades técnicas  na área, projeto idealizado por mim.' techs={['Javascript', 'React', 'Styled Components', 'Vercel', 'ForSubmit']} link='www.google.com'/>    
+                    <CardProject title ='My Portfolio' image={Project3} description ='Projeto realizado para prática de conceitos com objetivo acadêmico e junto com a apresentação das minhas habilidades técnicas  na área, projeto idealizado por mim.' techs={['Javascript', 'React', 'Styled Components', 'Vercel', 'ForSubmit']} link='https://project-my-portfolio-eor13.vercel.app/'/>    
                     
                 </ListCardProjects>
             </ContainerProjects>

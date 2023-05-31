@@ -1,8 +1,9 @@
 import { faGithub, faHtml5, faCss3Alt, faJsSquare, faReact, faJava, faFigma, faGitAlt} from "@fortawesome/free-brands-svg-icons";
-import { faCode, faDatabase, faImage } from "@fortawesome/free-solid-svg-icons";
-
+import { faCode, faDatabase } from "@fortawesome/free-solid-svg-icons";
+import faStyledComponent from "../../images/styled-components.svg";
+import faSpringboot from "../../images/springboot.svg";
 import { ButtonScrollTop } from '../../components/buttons';
-import { BoxHabilits, ContainerCurriculum, Nota, TitlePrincipal, TitleSecondary, Text, Ul, HabilitsTec,Logos} from './syle';
+import { BoxHabilits, ContainerCurriculum, Nota, TitlePrincipal, TitleSecondary, Text, Ul, HabilitsTec, Logos, ImgSpring, ImgStyled } from './syle';
 
 
 
@@ -62,8 +63,8 @@ const Curriculum =() =>{
                             <p><Logos icon={faDatabase}/> <br/> SQL</p>
                             
                             {/* Falta arrumar o Icone -- encontrar */}
-                            <p><Logos icon={faImage}/> <br/> Springboot</p>
-                            <p><Logos icon={faImage}/> <br/> Style Componets</p>
+                            <p><ImgSpring src={faSpringboot}/> <br/> Springboot</p>
+                            <p><ImgStyled src={faStyledComponent}/> <br/> Style Componets</p>
                         </HabilitsTec>
                     </div>
                 </BoxHabilits>
