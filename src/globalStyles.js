@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 import { themes } from "./services/themeContext";
-// console.log(theme)
 
 export const GlobalStyle  =  createGlobalStyle`
   html{
@@ -14,9 +13,21 @@ export const GlobalStyle  =  createGlobalStyle`
     font-family: ${themes.font.fontPrincipal};
     font-size: 1.5rem;
   }
-
+  
   a{
     text-decoration: none;
     cursor: pointer;
+  }
+  
+  *::-webkit-scrollbar{
+    width: 9px;
+  }
+  *::-webkit-scrollbar-track{
+    background-color: ${({theme}) => theme.colorSecondary};
+  }
+  *::-webkit-scrollbar-thumb{
+      background-color: ${({theme}) => theme.colorOfTheEnds};
+      border-radius: 10px;
+      border: 3px solid ${themes.dark.colorPrimary};
   }
 `
