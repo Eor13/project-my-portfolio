@@ -28,6 +28,6 @@ export const GlobalStyle  =  createGlobalStyle`
   *::-webkit-scrollbar-thumb{
       background-color: ${({theme}) => theme.colorOfTheEnds};
       border-radius: 10px;
-      border: 3px solid ${themes.dark.colorPrimary};
+      border: 3px solid ${({theme}) => theme.colorSecondary};
   }
 `

@@ -20,8 +20,11 @@ const Curriculum =() =>{
                 <TitleSecondary>Formação Acadêmica</TitleSecondary>
                 <Text> USJT - Bacharel em Administração - linha de formação específica em administração de empresas. Conclusão em 12/2015</Text>
                 <TitleSecondary>Cursos</TitleSecondary>
-                <Text>DevQuest - Mentoria especializada - Curso de especialização para desenvolver front-end - Conclusão em 01/2023</Text>
+                <Text>DIO – Bootcamp Banco PAN Java Developer - Conclusão em 05/2023</Text>
+                <Text>DIO – Trabalhando com Banco de Dados SQL e NoSQL - Conclusão em 04/2023</Text>
                 <Text>DIO – Curso de Trabalhando em Equipes Ágeis - Conclusão em 02/2023</Text>
+                <Text>DevQuest - Mentoria especializada - Curso de especialização para desenvolver front-end - Conclusão em 02/2023</Text>
+
 
                 <TitleSecondary>Experiências Profissionais</TitleSecondary>
                 <Text>26/11/2012 - 20/10/2013: Defensoria Pública de São Paulo – Estágio de Administração</Text>
