@@ -96,7 +96,7 @@ const HabilitsTec = styled.div`
         padding: 0 15px;
         text-decoration: overline;
         font-weight:${({theme}) => theme === themes.dark ? 300 : 500};
-        background-color:${({theme}) => theme === themes.dark ? "rgba(100, 100, 111, 0.429)" : "none"};
+        /* background-color:${({theme}) => theme === themes.dark ? "rgba(100, 100, 111, 0.429)" : "none"}; */
         border-radius: 5px;
     }
 `
@@ -104,10 +104,12 @@ const ImgSpring = styled.img`
     width: 45px;
     padding-bottom: 8px;
     color: ${({theme}) => theme.colorPrimary};
+    filter: invert( ${({theme}) => theme === themes.dark ? 1 : 0 } );
 `
 const ImgStyled = styled.img`
     width: 65px;
     color: ${({theme}) => theme.colorPrimary};
+    filter: invert( ${({theme}) => theme === themes.dark ? 1 : 0 } );
 `
 
 export {HabilitsTec, BoxHabilits, ContainerCurriculum, TitlePrincipal, TitleSecondary, Nota, Ul, Text, Logos, ImgSpring, ImgStyled }
