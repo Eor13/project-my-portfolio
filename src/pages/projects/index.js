@@ -9,9 +9,6 @@ import { ContainerProjects, Intro, ListCardProjects, Title } from "./style";
 const Projects =() =>{
     return(
         <>
-            {/* <div>
-                <img src="http://placekitten.com/g/1000/300" alt="cat"/>
-            </div> */}
             <ContainerProjects>
                 <Title>Projetos</Title>
                 <Intro >Estes são alguns projetos desenvolvidos onde aplico algumas tecnicas e tecnologias de desenvolvimentos aprendidas durante durente meu aprendizado como programador.</Intro>

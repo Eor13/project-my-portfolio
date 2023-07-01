@@ -2,8 +2,9 @@ import { faGithub, faHtml5, faCss3Alt, faJsSquare, faReact, faJava, faFigma, faG
 import { faCode, faDatabase } from "@fortawesome/free-solid-svg-icons";
 import faStyledComponent from "../../images/styled-components.svg";
 import faSpringboot from "../../images/springboot.svg";
+import faTypeScript from "../../images/typescript.svg";
 import { ButtonScrollTop } from '../../components/buttons';
-import { BoxHabilits, ContainerCurriculum, Nota, TitlePrincipal, TitleSecondary, Text, Ul, HabilitsTec, Logos, ImgSpring, ImgStyled } from './syle';
+import { BoxHabilits, ContainerCurriculum, Nota, TitlePrincipal, TitleSecondary, Text, Ul, HabilitsTec, Logos, ImgSpring, ImgStyled } from './style';
 
 
 
@@ -58,14 +59,13 @@ const Curriculum =() =>{
                             <p><Logos icon={faCss3Alt}/> <br/> CSS </p>
                             <p><Logos icon={faJsSquare}/> <br/>Javascript </p>
                             <p><Logos icon={faReact}/> <br/> React </p>
+                            <p><ImgSpring src={faTypeScript}/> <br/> TypeScript</p>
                             <p><Logos icon={faCode}/> <br/>Clear Code</p>
                             <p><Logos icon={faFigma}/> <br/> Figma </p>
                             <p><Logos icon={faGitAlt}/> <br/> Git </p>
                             <p><Logos icon={faGithub}/> <br/> GitHub </p>
                             <p><Logos icon={faJava}/> <br/> Java</p>
                             <p><Logos icon={faDatabase}/> <br/> SQL</p>
-                            
-                            {/* Falta arrumar o Icone -- encontrar */}
                             <p><ImgSpring src={faSpringboot}/> <br/> Springboot</p>
                             <p><ImgStyled src={faStyledComponent}/> <br/> Style Componets</p>
                         </HabilitsTec>

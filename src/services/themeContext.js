@@ -30,7 +30,7 @@ const ThemeeProvider = ({children}) => {
     const getItemsLocalStorage =() =>{
         const savedTheme = localStorage.getItem('theme')
         // Se tiver um tema no armazenamento local, retorna, senão retorne 'dark'
-        return savedTheme ? savedTheme : 'dark' 
+        return savedTheme ? savedTheme : 'light' 
     }
     
     // Estado para armazenar o tema
@@ -47,7 +47,6 @@ const ThemeeProvider = ({children}) => {
    
     return(
         <ThemeContext.Provider value={{ theme, upDateTheme }}>
-            {/* <ThemeProvider theme = {typeof theme === 'object' ? theme : themes.light}> */}
             <ThemeProvider theme = {themes[theme]} key={theme}>
                 {children}
             </ThemeProvider>
