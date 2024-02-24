@@ -1,6 +1,6 @@
 import { faGithubAlt, faLinkedinIn,faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { BoxContact, ContactFooter, ContainerFooter, StyleFontAwesomeIcon, StyleFontAwesomeIconSocialMedias, Title, StyleFontAwesomeIconWhatsapp } from "./style";
+import { BoxContact, ContactFooter, ContainerFooter, StyleFontAwesomeIcon, StyleFontAwesomeIconSocialMedias, Title, StyleFontAwesomeIconWhatsapp, Email } from "./style";
 import { LinkSocialMedias } from "../buttons";
 
 const Footer =() =>{
@@ -17,13 +17,12 @@ const Footer =() =>{
             </ContactFooter>
             <BoxContact>
                 <ContactFooter>
-                    <Title> <StyleFontAwesomeIconWhatsapp icon={faWhatsapp} /> Telefone</Title>
-                    <LinkSocialMedias href="https://wa.me/5511992714746"> (11)99271-4746</LinkSocialMedias>
-                </ContactFooter>
-                <ContactFooter>
                     <Title><StyleFontAwesomeIcon icon={faEnvelope}/> Email</Title>
-                    <LinkSocialMedias href="/contact"> eor1309@gmail.com</LinkSocialMedias>    
-                </ContactFooter>
+                    <Email> eversonoribeiro@outlook.com</Email>
+                </ContactFooter> 
+                <LinkSocialMedias href="https://wa.me/5511992714746">
+                    <StyleFontAwesomeIconWhatsapp  icon={faWhatsapp} /> 
+                </LinkSocialMedias>
             </BoxContact>
         </ContainerFooter>
     );

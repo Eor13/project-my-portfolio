@@ -7,7 +7,7 @@ const ContainerNav  = styled.header`
     justify-content: space-evenly;
     align-items: center ;
     padding: 10px;
-    min-height: 5vh;
+    min-height: 8vh;
     max-width: 100vw;
 
     @media (max-width: 600px) {
@@ -22,7 +22,7 @@ const BoxName =styled.div`
 const Name = styled.h1`
     margin: 0;
     font-size: 3rem;
-    color: ${themes.dark.colorSecondary};
+    color: ${({theme}) => theme.colorSecondary};
 
     @media (max-width: 950px) {
         font-size: 2.5rem;
@@ -53,7 +53,7 @@ const Ul = styled.ul`
         flex-flow: column nowrap;
         background-color: ${ ({theme}) => theme.colorDetails};
         border-radius: 20px;
-        display: ${({open})=>open? 'flex': 'none'};
+        display: ${({open})=>open ? 'flex': 'none'};
         position: absolute;
         top: 60px;
         right: 15px;
@@ -65,13 +65,13 @@ const Link =styled.a`
     margin: 0.3rem;
     font-size: 1.9rem;
     transition: background-color 0.5s ease-in-out;
-    color: ${themes.dark.colorSecondary};
+    color: ${({theme}) => theme.colorSecondary};
 
     &:hover{
     box-shadow:  0px 7px 2px 0px rgba(100, 100, 111, 0.429);
     background-color: ${({theme}) => theme.colorDetails};
     padding: 8px;
-    border-radius: 25px;
+    border-radius: 15px;
 
     @media (max-width:900px) {
         background-color: ${({theme}) => theme.colorOfTheEnds};
@@ -93,7 +93,7 @@ const Menu = styled.div`
     }
 
     div{
-        background-color: ${({open}) => open ? themes.dark.colorPrimary: themes.dark.colorSecondary};
+        background-color: ${({theme}) => theme.colorSecondary };
         width: 3rem;
         height: 0.5rem;
         border-radius:10px;

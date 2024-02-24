@@ -4,9 +4,16 @@ import { themes } from "../../services/themeContext";
 
 const ContainerCurriculum =styled.section`
     display: flex;
+    margin: auto;
     flex-direction: column;
+    justify-content: center;
     text-align: justify;
     padding: 2% 5%;
+    width:70vw;
+    min-height: 77vh;
+    @media(max-width:1440px){
+        width:100%;
+    }
 `
 const TitlePrincipal =styled.h1`
     background-color: ${({theme}) => theme.colorTitles};

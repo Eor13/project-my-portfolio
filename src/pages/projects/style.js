@@ -5,11 +5,16 @@ const ContainerProjects = styled.section`
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: auto;
+    width:70vw;
+    @media(max-width:1440px){
+        width:100%;
+    }
 `
 const Title = styled.h1`
     background-color: ${({theme}) => theme.colorTitles};
     font-family: ${themes.font.fontSecondary};
-    color: ${({theme}) => theme.colorSecondary};
+    color: ${({theme}) => theme.colorPrimary};
     letter-spacing: 2px;
     font-size: 2.5rem;
     font-weight: 700;
@@ -21,6 +26,7 @@ const Title = styled.h1`
 const Intro =styled.p`
     color: ${({theme}) => theme.colorPrimary};
     text-align: justify;
+    text-indent: 2rem;
     padding: 0 15px;
     font-size: 1.7rem;
     font-weight:${({theme}) => theme === themes.dark ? 300 : 500};

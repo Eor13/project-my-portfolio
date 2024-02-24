@@ -5,17 +5,17 @@ const themes = {
     dark:{
         colorPrimary: '#F2F2F2',
         colorSecondary: '#0D0D0D',
-        colorDetails: '#F2CF66',
-        colorOfTheEnds: '#F25C05',
-        colorTitles: '#F24405',
+        colorDetails: '#9E98A6',
+        colorOfTheEnds: '#CFCCD9',
+        colorTitles: '#403A3A',
     },
     light:{
         
         colorPrimary: '#0D0D0D',
         colorSecondary: '#F2F2F2',
-        colorDetails: '#F2CF66',
-        colorOfTheEnds: '#F25C05',
-        colorTitles: '#F24405',
+        colorDetails: '#8BA5D9',
+        colorOfTheEnds: '#1C418C',
+        colorTitles: '#5075BF',
     },
     font:{
         fontPrincipal: 'Spline Sans Mono , monospace',

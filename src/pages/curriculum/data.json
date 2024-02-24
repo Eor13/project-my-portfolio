@@ -1,0 +1,53 @@
+{
+  "text": "Estou à procura da minha primeira oportunidade como desenvolver Front-End Júnior. Estou em transição de carreira para área de tecnologia no momento, venho da área administrativa de empresas na qual sempre tiver facilidade em entender a lógica por trás dos programas e seus funcionamentos, dessa maneira despertou-me o interesse na área de Tech.",
+  "academicFormatting": [
+    {
+      "school": "Universidade Estácio de Sá",
+      "course": "Análise e Desenvolvimento de Sistemas",
+      "finaly": "Conclusão em 12/2025"
+    },
+    {
+      "school": "USJT",
+      "course": "Bacharel em Administração - linha de formação específica em administração de empresas.",
+      "finaly": "Conclusão em 12/2015"
+    }
+  ],
+  "courses": [
+    {
+      "school": "DIO",
+      "course": "Bootcamp Banco PAN Java Developer",
+      "finaly": "Conclusão em 05/2023"
+    },
+    {
+      "school": "DIO",
+      "course": "Trabalhando com Banco de Dados SQL e NoSQL",
+      "finaly": "Conclusão em 04/2023"
+    },
+    {
+      "school": "DIO",
+      "course": "Curso de Trabalhando em Equipes Ágeis",
+      "finaly": "Conclusão em 02/2023"
+    },
+    {
+      "school": "DevQuest",
+      "course": "Curso dMentoria especializada - Curso de especialização para desenvolver front-ende Trabalhando em Equipes Ágeis",
+      "finaly": "Conclusão em 02/2023"
+    }
+  ],
+  "professionalExperiences": [
+    {
+      "startDate": "11/2012",
+      "endDate": "10/2013",
+      "company": "Defensoria Pública de São Paulo",
+      "job":"Estágio de Administração"
+    },
+    {
+      "startDate": "04/2016",
+      "endDate": "01/2024",
+      "company": "Alumínio Guima Indústria e Comercio Eireli",
+      "job":"Assistente Administrativo"
+    }
+  ],
+  "softSkills":[ "Responsável", "Organizado",  "Proativo",  "Resiliente",  "Ético", "Trabalho em equipe"],
+  "agileMethodologies":["Kanban", "OKR",  "Extreme Programming (XP)", "Framework Scrum"]
+}
