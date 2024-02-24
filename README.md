@@ -2,7 +2,7 @@
 <div style="text-align: justify">
 Projeto realizado para prática de conceitos com objetivo acadêmico e junto com a apresentação das minhas habilidades técnicas  na área, projeto idealizado por mim.
 
-<img src ="src/images/project-my-portfolio.png" alt="Imagem da tela inicial do projeto.">
+<img src ="src/images/project-my-portfolio.gif" alt="Imagem da tela inicial do projeto.">
 
 
 O objetivo foi construir em React um Portfólio para apresentação das minhas capacidades, as principais cores escolhidas do projeto foram yin que representar o escuro e yang que representar o claro.
