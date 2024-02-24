@@ -16,7 +16,6 @@ O objetivo foi construir em React um Portfólio para apresentação das minhas c
 - Javascript
 - React
 - Styled Component
-- ForSubmit
 - Vercel
 
 ### Conceitos Aplicados de cada Tecnologia
@@ -40,7 +39,6 @@ O objetivo foi construir em React um Portfólio para apresentação das minhas c
             <li>Utilização de Arrow functions como padrão para estabelecer Funções</li>
             <li>Utilização de Components Stateless e StateFull</li>
             <li>Utilização de Hooks como useState e useEffect</li>
-            <li>Utilização de Formulários</li>
             <li>Renderização de Condicionais</li>
             <li>Utilização de Rotas com ReactRouter</li>
             <li>Atribuição via Desestruturação de Itens</li>
@@ -54,7 +52,6 @@ O objetivo foi construir em React um Portfólio para apresentação das minhas c
     <li>Libs e Ferramentas
         <ul>
             <li>Vercel - Utilização de plataforma para exibição página nos navegadores.</li>
-            <li>Formsubmit - utilização da ferramenta para envio de email. </li>
             <li>LocalStorage - utilização da ferramenta armazenamento de tema. </li>
         </ul>
     </li>
